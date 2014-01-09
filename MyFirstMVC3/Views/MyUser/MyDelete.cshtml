@@ -1,0 +1,80 @@
+﻿@model MyFirstMVC3.Models.MyUser
+
+@{
+    ViewBag.Title = "MyDelete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this User?</h3>
+
+<form method="post" action="/MyUser/MyDelete/@Model.UserID">
+
+<fieldset>
+    <legend>User</legend>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">Address</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Address)
+    </div>
+
+    <div class="display-label">Town</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Town)
+    </div>
+
+    <div class="display-label">County</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.County)
+    </div>
+
+    <div class="display-label">Country</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Country)
+    </div>
+
+    <div class="display-label">Email</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+    <div class="display-label">DoB</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DoB)
+    </div>
+
+    <div class="display-label">IsActive</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsActive)
+    </div>
+
+    <div class="display-label">UserName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UserName)
+    </div>
+
+    <div class="display-label">Password</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Password)
+    </div>
+
+    <div class="display-label">Rating</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Rating)
+    </div>
+    <p>
+        <input type="submit" value="Delete" />
+    </p>
+</fieldset>
+</form>
+
+@using (Html.BeginForm()) {
+    <p>
+         @Html.ActionLink("Back to List", "MyIndex")
+    </p>
+}

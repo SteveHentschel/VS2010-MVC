@@ -1,0 +1,73 @@
+﻿@model IEnumerable<MyFirstMVC3.Models.MyUser>
+
+@{
+    ViewBag.Title = "MyIndex";
+}
+
+@section PageScripts{
+    <link href="/Content/demo_table.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/jquery.dataTables.1.8.2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("table").dataTable();
+        });
+    </script>
+}
+
+<h2>Index</h2>
+
+<p>
+    <a href="/MyUser/MyCreate">Create New User</a>
+</p>
+
+<table class="display">
+    <thead>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Address
+        </th>
+        <th>
+            Town
+        </th>
+        <th>
+            County
+        </th>
+        <th>
+            Rating
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @item.Name
+        </td>
+        <td>
+            @item.Address
+        </td>
+        <td>
+            @item.Town
+        </td>
+        <td>
+            @item.County
+        </td>
+        <td>
+            @item.Rating
+        </td>
+        <td>
+            <a href="/MyUser/MyDetails/@item.UserID">Details</a> |
+            <a href="/MyUser/MyEdit/@item.UserID">Edit</a> |
+            <a href="/MyUser/MyDelete/@item.UserID">Delete</a>
+        </td>
+    </tr>
+}
+</tbody>
+</table>
+
+@Html.Partial("_MySearchUsers")

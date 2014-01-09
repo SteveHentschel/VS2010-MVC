@@ -1,0 +1,7 @@
+c:\documents and settings\all\my documents\visual studio 2010\Projects\MVC3 DBfirst\MVC3 DBfirst\bin\MVC3 DBfirst.dll
+c:\documents and settings\all\my documents\visual studio 2010\Projects\MVC3 DBfirst\MVC3 DBfirst\bin\MVC3 DBfirst.pdb
+c:\documents and settings\all\my documents\visual studio 2010\Projects\MVC3 DBfirst\MVC3 DBfirst\bin\EntityFramework.dll
+c:\documents and settings\all\my documents\visual studio 2010\Projects\MVC3 DBfirst\MVC3 DBfirst\bin\EntityFramework.xml
+c:\documents and settings\all\my documents\visual studio 2010\Projects\MVC3 DBfirst\MVC3 DBfirst\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\all\my documents\visual studio 2010\Projects\MVC3 DBfirst\MVC3 DBfirst\obj\Debug\MVC3 DBfirst.dll
+c:\documents and settings\all\my documents\visual studio 2010\Projects\MVC3 DBfirst\MVC3 DBfirst\obj\Debug\MVC3 DBfirst.pdb
